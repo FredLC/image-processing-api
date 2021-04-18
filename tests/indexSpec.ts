@@ -1,13 +1,14 @@
 import supertest from 'supertest';
-import resizeImage from '../utilities/image-processing';
-import app from '../index';
-import { assert } from 'node:console';
+import resizeImage from '../src/utilities/image-processing';
+import app from '../src/index';
 
 const request = supertest(app);
 
 describe('Test api endpoints', () => {
-  it('should get the endpoint /api/images with a status of 200', async () => {
-    const response = await request.get('/api/images');
+  it('should get the main api endpoint with a status of 200', async () => {
+    const response = await request.get(
+      '/api/images?filename=fjord&width=400&height=600'
+    );
     expect(response.status).toBe(200);
   });
 
