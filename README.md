@@ -11,7 +11,11 @@ Example: _fjord.jpg --> fjord-thumb.jpg_
 
 Enter filename **_without_** the extension, and provide width and height as numbers, without quotes.
 
-Example: _/api/images?filename=fjord&width=200&height=200_
+### Example:
+
+```
+/api/images?filename=fjord&width=200&height=200
+```
 
 ## Get started
 
@@ -21,4 +25,16 @@ npm install
 
 ```
 npm run start
+```
+
+### Testing
+
+```
+npm run test
+```
+
+### Building
+
+```
+npm run build
 ```
