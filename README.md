@@ -38,3 +38,15 @@ npm run test
 ```
 npm run build
 ```
+
+### Linting
+
+```
+npm run lint
+```
+
+### Prettier
+
+```
+npm run prettier
+```

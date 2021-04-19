@@ -2,14 +2,14 @@
   "name": "image-processing-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "prettier": "prettier --config .prettierrc 'src/**/*.ts' --write",
     "lint": "eslint",
     "build": "npx tsc",
     "jasmine": "jasmine",
     "test": "npm run build && npm run jasmine",
-    "start": "nodemon src/index.ts"
+    "start": "nodemon src/app.ts"
   },
   "keywords": [],
   "author": "",
